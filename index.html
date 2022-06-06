@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo proyecto</title>
+    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="icon" href="./Images/heart-icon.png">
+</head>
+<body>
+    <div class="container">
+        <h2>Calcular grados de temperatura</h2>
+        <div class="contenedor_final">
+            <div class="operacion">
+                <label>Pasar de C° a F°</label>
+                <button id="pasar_c">Click aquí para calcular</button>
+                <div class="modalContainer_c" id="myModal_c">
+                    <div class="modal-content_c">
+                        <span class="close_c">X</span>
+                        <h2>Pasar de C° a F°</h2>
+                        <label>Ingresa los grados C° a calcular:</label>
+                        <input type="number" name="calcular_c" id="calcular_c">
+                        <button id="calculo_c" onclick="calcular_f();">Pasar a F°</button>
+                        <span id="resultado_c"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="operacion">
+                <label>Pasar de F° a C°</label>
+                <button id="pasar_f">Click aquí para calcular</button>
+                <div class="modalContainer_f" id="myModal_f">
+                    <div class="modal-content_f">
+                        <span class="close_f">X</span>
+                        <h2>Pasar de F° a C°</h2>
+                        <label>Ingresa los grados F° a calcular:</label>
+                        <input type="number" name="calcular_f" id="calcular_f">
+                        <button id="calculo_f" onclick="calcular_c();">Pasar a C°</button>
+                        <span id="resultado_f"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contenedor_final">
+            <div class="operacion">
+                <label>Pasar de C° a K°</label>
+                <button id="pasar_ck">Click aquí para calcular</button>
+                <div class="modalContainer_ck" id="myModal_ck">
+                    <div class="modal-content_ck">
+                        <span class="close_ck">X</span>
+                        <h2>Pasar de C° a K°</h2>
+                        <label>Ingresa los grados C° a calcular:</label>
+                        <input type="number" name="calcular_ck" id="calcular_ck">
+                        <button id="calculo_ck" onclick="calcular_ck();">Pasar a K°</button>
+                        <span id="resultado_ck"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="operacion">
+                <label>Pasar de F° a K°</label>
+                <button id="pasar_fk">Click aquí para calcular</button>
+                <div class="modalContainer_fk" id="myModal_fk">
+                    <div class="modal-content_fk">
+                        <span class="close_fk">X</span>
+                        <h2>Pasar de F° a K°</h2>
+                        <label>Ingresa los grados F° a calcular:</label>
+                        <input type="number" name="calcular_ck" id="calcular_fk">
+                        <button id="calculo_fk" onclick="calcular_fk();">Pasar a K°</button>
+                        <span id="resultado_fk"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contenedor_final">
+            <div class="operacion">
+                <label>Pasar de K° a C°</label>
+                <button id="pasar_kc">Click aquí para calcular</button>
+                <div class="modalContainer_kc" id="myModal_kc">
+                    <div class="modal-content_kc">
+                        <span class="close_kc">X</span>
+                        <h2>Pasar de K° a C°</h2>
+                        <label>Ingresa los grados K° a calcular:</label>
+                        <input type="number" name="calcular_kc" id="calcular_kc">
+                        <button id="calculo_kc" onclick="calcular_kc();">Pasar a C°</button>
+                        <span id="resultado_kc"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="operacion">
+                <label>Pasar de K° a F°</label>
+                <button id="pasar_kf">Click aquí para calcular</button>
+                <div class="modalContainer_kf" id="myModal_kf">
+                    <div class="modal-content_kf">
+                        <span class="close_kf">X</span>
+                        <h2>Pasar de K° a F°</h2>
+                        <label>Ingresa los grados K° a calcular:</label>
+                        <input type="number" name="calcular_kf" id="calcular_kf">
+                        <button id="calculo_kf" onclick="calcular_kf();">Pasar a F°</button>
+                        <span id="resultado_kf"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./JS/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #371B58;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+.container{
+    border: 2px solid #FFDAAF;
+    border-radius: 10px;
+}
+
+.container{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    color: #FFDAAF;
+    max-width: 100%;
+    width: 40%;
+    height: 360px;
+}
+
+.container h2{
+    text-align: center;
+    padding-top: 2%;
+}
+
+.container .contenedor_final{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5%;
+}
+
+
+.container .operacion{
+    display: flex;
+    flex-direction: column;
+}
+
+.container label{
+    font-weight: 600;
+    padding-bottom: 5%;
+}
+
+.container button{
+    background-color: transparent;
+    color: #FFDAAF;
+    border: 2px solid #FFDAAF;
+    width: 80%;
+    height: 80%;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+button:hover{
+    color:#371B58;
+    background-color: white;
+}
+
+
+
+.modalContainer_c{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.modalContainer_c .modal-content_c{
+    background-color: #282b29;
+    margin: auto;
+    padding: 25px;
+    border: 1px solid #6927a7;
+    width: 60%;
+}
+
+.modalContainer_c input{
+    background-color: transparent;
+    color: #FFDAAF;
+    font-weight: 600;
+    border: 1px solid #FFDAAF;
+    width: 5%;
+}
+
+.modalContainer_c #calculo_c{
+    margin-left: 20px;
+    width: 30%;
+    height: 30%;
+}
+
+.modalContainer_c .close_c{
+    color: rgb(192, 40, 40);
+    float: right;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.modalContainer_c .close_c:hover .close_c:focus{
+    color: #0000;
+    text-align: none;
+    cursor: pointer; 
+}
+
+.modalContainer_f{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.modalContainer_f .modal-content_f{
+    background-color: #282b29;
+    margin: auto;
+    padding: 25px;
+    border: 1px solid #6927a7;
+    width: 60%;
+}
+
+.modalContainer_f input{
+    background-color: transparent;
+    color: #FFDAAF;
+    font-weight: 600;
+    border: 1px solid #FFDAAF;
+    width: 5%;
+}
+
+.modalContainer_f #calculo_f{
+    margin-left: 20px;
+    width: 30%;
+    height: 30%;
+}
+
+.modalContainer_f .close_f{
+    color: rgb(192, 40, 40);
+    float: right;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.modalContainer_f .close_f:hover .close_f:focus{
+    color: #0000;
+    text-align: none;
+    cursor: pointer; 
+}
+
+.modalContainer_ck{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.modalContainer_ck .modal-content_ck{
+    background-color: #282b29;
+    margin: auto;
+    padding: 25px;
+    border: 1px solid #6927a7;
+    width: 60%;
+}
+
+.modalContainer_ck input{
+    background-color: transparent;
+    color: #FFDAAF;
+    font-weight: 600;
+    border: 1px solid #FFDAAF;
+    width: 5%;
+}
+
+.modalContainer_ck #calculo_ck{
+    margin-left: 20px;
+    width: 30%;
+    height: 30%;
+}
+
+.modalContainer_ck .close_ck{
+    color: rgb(192, 40, 40);
+    float: right;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.modalContainer_ck .close_ck:hover .close_ck:focus{
+    color: #0000;
+    text-align: none;
+    cursor: pointer; 
+}
+
+.modalContainer_fk{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.modalContainer_fk .modal-content_fk{
+    background-color: #282b29;
+    margin: auto;
+    padding: 25px;
+    border: 1px solid #6927a7;
+    width: 60%;
+}
+
+.modalContainer_fk input{
+    background-color: transparent;
+    color: #FFDAAF;
+    font-weight: 600;
+    border: 1px solid #FFDAAF;
+    width: 5%;
+}
+
+.modalContainer_fk #calculo_fk{
+    margin-left: 20px;
+    width: 30%;
+    height: 30%;
+}
+
+.modalContainer_fk .close_fk{
+    color: rgb(192, 40, 40);
+    float: right;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.modalContainer_fk .close_fk:hover .close_fk:focus{
+    color: #0000;
+    text-align: none;
+    cursor: pointer; 
+}
+
+
+.modalContainer_kc{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.modalContainer_kc .modal-content_kc{
+    background-color: #282b29;
+    margin: auto;
+    padding: 25px;
+    border: 1px solid #6927a7;
+    width: 60%;
+}
+
+.modalContainer_kc input{
+    background-color: transparent;
+    color: #FFDAAF;
+    font-weight: 600;
+    border: 1px solid #FFDAAF;
+    width: 5%;
+}
+
+.modalContainer_kc #calculo_kc{
+    margin-left: 20px;
+    width: 30%;
+    height: 30%;
+}
+
+.modalContainer_kc .close_kc{
+    color: rgb(192, 40, 40);
+    float: right;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.modalContainer_kc .close_kc:hover .close_kc:focus{
+    color: #0000;
+    text-align: none;
+    cursor: pointer; 
+}
+
+.modalContainer_kf{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.modalContainer_kf .modal-content_kf{
+    background-color: #282b29;
+    margin: auto;
+    padding: 25px;
+    border: 1px solid #6927a7;
+    width: 60%;
+}
+
+.modalContainer_kf input{
+    background-color: transparent;
+    color: #FFDAAF;
+    font-weight: 600;
+    border: 1px solid #FFDAAF;
+    width: 5%;
+}
+
+.modalContainer_kf #calculo_kf{
+    margin-left: 20px;
+    width: 30%;
+    height: 30%;
+}
+
+.modalContainer_kf .close_kf{
+    color: rgb(192, 40, 40);
+    float: right;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.modalContainer_kf .close_kf:hover .close_kf:focus{
+    color: #0000;
+    text-align: none;
+    cursor: pointer; 
+}
